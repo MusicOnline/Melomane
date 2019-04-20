@@ -14,7 +14,7 @@ class Meta(commands.Cog):
     def __init__(self, bot: botto.Botto) -> None:
         self.bot: botto.Botto = bot
         self.owner_show_hidden: bool = False
-        self.cog_order: List[str] = ["Meta", "Owner"]
+        self.cog_order: List[str] = ["Music", "Meta", "Owner"]
 
     def get_statistics_embed(self) -> discord.Embed:
         total_members: int = sum(1 for m in self.bot.get_all_members())
